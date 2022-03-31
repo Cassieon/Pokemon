@@ -6,9 +6,13 @@ class Pokemon {
         this.level = level;
         this.canEvolve = true;
         this.hp = 100;
-        this.moves = {};
-
-        
+        this.moves = [];  
+    }
+    pokeMoves (newMove, x) {
+        while (this.level > 0 < 5) {
+            this.moves.push({[newMove]:x})
+            console.log(`${this.name} learned ${newMove}`)
+        }
     }
 }
 
@@ -18,3 +22,10 @@ class EvolvedPokemon extends Pokemon {
         this.evolvedFrom = evolvedFrom
     }
 }
+const Charmander = new Pokemon("Charmander", "Fire", "Water", 4)
+
+console.log(Charmander)
+
+Charmander.pokeMoves("torch:15", 15)
+
+console.log()
