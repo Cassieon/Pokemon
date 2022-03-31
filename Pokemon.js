@@ -45,8 +45,8 @@ Charmander.pokeLevel(4)
 console.log(Charmander);
 
 Charmeleon.pokeMoves("Fireball", 25)
+Charmeleon.pokeLevel(15)
 console.log(Charmeleon);
-Charmeleon.pokeMoves("Fireball", 25)
 
 
 
